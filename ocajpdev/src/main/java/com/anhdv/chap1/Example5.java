@@ -6,7 +6,7 @@ import java.util.Locale;
 
 import com.anhdv.chap1.child.Example3;
 
-public class Example1 {
+public class Example5 {
 
 
 	int $abc;
@@ -19,11 +19,11 @@ public class Example1 {
 	Locale defaultLocale = ENGLISH;
 	protected String protectedVar = "test protected variable";
 
-	public Example1() {
+	public Example5() {
 
 	}
 
-	Example1(Locale locale) {
+	Example5(Locale locale) {
 		this.defaultLocale = locale;
 	}
 
