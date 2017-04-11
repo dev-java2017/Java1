@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Array {
 //    public static void alterValue (int x ){
-//        x = 0; 
+//        x = 0;
 //    }
 //    public static void alterArray (int[] a){
-//        a[0] = 0; 
+//        a[0] = 0;
 //    }
     public static void main(String[] args) {
 //        exam1Declare();
@@ -23,11 +23,28 @@ public class Array {
 //        exam8Compare();
         test();
     }
-    
+
 
     private static void test() {
-        
+    	int x  = 2;
+    	int y  = 4;
+    	x +=        x++ - --y + (++x - 3 * (--y - --x));
+//    	x   = 2 + (2     - 3   + (4    -  3 * (2   - 3)));
+//    		 = 8
+System.out.println(x);
+    	x = 2;
+    	y = 3;
+    	x =+ ++x > y-- ? x++ - 3 * (--y - --x) : x-- + 3 * (y-- - --x);
+    	if (++x > y--) {
+    		x = x++ - 3 * (--y - --x);
+    	} else {
+    		x =  x-- + 3 * (y-- - --x);
+    	}
+    	System.out.println(x);
+    	byte t = 5;
+    	t += 5;
     }
+
 
     private static void exam1Declare() {
         String[] str1;
@@ -40,7 +57,7 @@ public class Array {
 //        int key3 [];
 //        int[6] key6;
 //        int[] key7 = new int[];
-        
+
     }
     private static void exam2Declare() {
 //        int[][] arrStr = {{1, 2}, {3, 4}};
@@ -50,17 +67,17 @@ public class Array {
 //        a2[1][1] = 3;
 //        System.out.println(b[1]);
 //        int[] b2 = (int[]) o1;
-        
+
 //        String[][] arrStr = {{"first", "1"}, {"second", "2"}};
 //        Object o1 = arrStr;
 //        String[][] a2 = (String[][])o1;
 //        a2[1][1] = "temp";
 //        a2[0][0].toUpperCase();
 //        System.out.println();
-        
-        
+
+
 //      what is in a2? arrStr?
-        
+
     }
     private static void exam3Init() {
 //        int[][] myArray = new int[3][];
@@ -80,7 +97,7 @@ public class Array {
     }
     private static void exam4Use() {
 //        Object[ ][ ] myArray = new Object[3][ ];
-//        
+//
 //        myArray[0] = new Animal[1];
 //        myArray[0][0] = new Animal();
 //        Animal animal = (Animal)myArray[0][0];
@@ -88,7 +105,7 @@ public class Array {
 //        myArray[1] = new String[2];
 //        myArray[1][0] = "string 1";
 //        myArray[1][1] = "string 2";
-////        
+////
 //        myArray[2] = new Integer[3];
 //        myArray[2][1] = 100;
     }
@@ -123,12 +140,12 @@ public class Array {
 //        StringBuilder des = sp.getDescript();
 //        des.append(" dog");
 //        sp.printDescript();
-//        
+//
 //        // test name
 //        String name = sp.getName();
 //        name += " dog";
 //        sp.printName();
-//        
+//
     }
     private static void exam7Legel(String[] args) {
 //        String[] horses = new String[5];
@@ -146,7 +163,7 @@ public class Array {
         arr1[1] = new StringBuilder("Oak");
         arr1[2] = new StringBuilder("Maple");
         arr1[3] = new StringBuilder("Walnut");
-//        
+//
         StringBuilder arr2[] = new StringBuilder[5];
         System.arraycopy(arr1, 0, arr2, 0, 5);
         arr2[3] = new StringBuilder("test"); // orther
@@ -154,7 +171,7 @@ public class Array {
 //            arr1[i] = 0;
 //            arr2[i] = 0;
 //        }
-        
+
         // print out
         if (arr1.equals(arr2)) {
             System.out.println("equal true");
@@ -167,15 +184,15 @@ public class Array {
             System.out.println("== false");
         }
     }
-    
-    
-    
+
+
+
 }
 class Animal {
     private String name = "kind of animal";
     private List<String> arrayList = new ArrayList<>();
-    
-    
+
+
     public Animal(Object object) {
         // TODO Auto-generated constructor stub
     }
@@ -188,9 +205,9 @@ class Animal {
     void printName() {
         System.out.println(name);
     }
-    
+
     // getter
-    
+
     String getName() {
         return name;
     }
