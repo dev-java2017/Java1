@@ -10,9 +10,9 @@ public abstract class AbstractParent {
 		System.out.println("hello");
 	}
 
-	public int test1() {
+	public void test1() {
 		System.out.println("test1");
-		return 1;
+		//return 1;
 	}
 
 }
