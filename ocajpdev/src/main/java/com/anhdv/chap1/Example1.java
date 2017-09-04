@@ -8,6 +8,9 @@ import com.anhdv.chap1.child.Example3;
 
 public class Example1 {
 
+	 public Example1(String a) {
+
+	}
 
 	int $abc;
 	int _xyz;
@@ -20,6 +23,7 @@ public class Example1 {
 	protected String protectedVar = "test protected variable";
 
 	public Example1() {
+		String String = "aaaaa";
 
 	}
 

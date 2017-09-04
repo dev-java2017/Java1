@@ -12,6 +12,10 @@ public abstract class AbstractParent {
 
 	public void test1() {
 		System.out.println("test1");
+		AbstractParent p = new AbstractParent() {
+
+		};
+		p.test1();
 		//return 1;
 	}
 
